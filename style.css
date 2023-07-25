@@ -1,0 +1,435 @@
+/* Global styles */
+/*@font-face {
+    font-family: "KlaxonFont";
+    src: url("/EurostileBold.ttf");
+    font-weight: bold;
+}*/
+
+@font-face {
+    font-family: "KlaxonFont";
+    src: url("AtkinsonHyperlegible-Regular.ttf");
+    font-weight: normal;
+}
+
+body {
+    font-family: 'KlaxonFont', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'KlaxonFont', sans-serif;
+}
+
+/* Header styles */
+header {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+#logo-menu {
+    display: flex;
+    align-items: center;
+    max-width: 12em;
+}
+
+#logo-menu img {
+    width: 100%;
+    height: auto;
+}
+
+header nav {
+    display: none;
+}
+
+header h1 {
+    width: 100%;
+}
+
+/* Hero section styles */
+#hero {
+    background-image: url('path/to/image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+#hero button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Features section styles */
+#features {
+    background-color: #f2f2f2;
+    padding: 2rem;
+}
+
+#features h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#features ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+#features li {
+    margin: 0.5rem 0;
+}
+
+/* Pricing section styles */
+#pricing {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+#pricing h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#pricing ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+#pricing li {
+    margin: 0.5rem 0;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#contact label {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#contact input,
+#contact textarea {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+#contact button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#gallery {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    max-width: 55%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-right: 1rem;
+    scroll-snap-align: start;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.controls button {
+    background-color: rgba(0, 0, 0, 0);
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 0.25rem;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+#pros {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translateY(-50%);
+    background-color: #F8E600;
+    color: black;
+    padding: 1rem;
+    width: 60%;
+    border-radius: 8px;
+    font-size: x-large;
+    padding-top: 5em;
+    padding-bottom: 10em;
+    padding-left: 3em;
+}
+
+#pros ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#pros li {
+    margin: 0.5rem 0;
+}
+
+#promotion {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 20%;
+    border-radius: 8px;
+    font-size: x-large;
+    padding-bottom: 9em;
+    padding-top: 6em;
+    z-index: 50000;
+}
+
+#promotion button {
+    border-radius: 999px;
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: x-large;
+    z-index: 3000;
+}
+
+#promotion button a {
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.inline-bolder {
+    text-decoration: underline;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 12rem;
+    max-width: 80%;
+    margin: 1em auto;
+}
+
+.pros-cons ul {
+    list-style: none;
+    padding: 0;
+    font-size: larger;
+    list-style: circle;
+}
+
+.pros-cons li {
+    margin-bottom: 1rem;
+}
+
+.tech-data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tech-data th,
+.tech-data td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.tech-data th {
+    background-color: #f2f2f2;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    #pros {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+        width: -webkit-fill-available;
+        padding: 1em;
+        font-size: small;
+        margin-right: 10%;
+        padding-bottom: 3em;
+    }
+
+    #pros h2 {
+        font-weight: bold;
+    }
+
+    #promotion {
+        position: relative;
+        top: unset;
+        right: unset;
+        transform: unset;
+        width: -webkit-fill-available;
+        padding: 1em;
+        font-size: small;
+        margin-top: -2em;
+        margin-left: 10%;
+    }
+
+    #promotion h2 {
+        padding-left: 15%;
+    }
+
+    #promotion p {
+        padding-left: 20%;
+    }
+
+    .slider {
+        max-width: 100%;
+        width: 100%;
+        /*margin-left: -25%;*/
+        scroll-padding: 0;
+    }
+
+    #gallery {
+        padding-bottom: 1em;
+        margin-top: 0;
+    }
+
+    .controls {
+        bottom: 0;
+    }
+
+    #logo-menu {
+        max-width: 8em;
+    }
+
+    #title-container h2 {
+        font-size: large;
+    }
+
+    .pros-cons ul {
+        padding-left: 1em;
+        font-size: medium;
+    }
+
+    section {
+        margin-top: 1em;
+    }
+}

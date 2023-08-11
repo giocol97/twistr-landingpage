@@ -258,7 +258,7 @@ header h1 {
     border-radius: 8px;
     font-size: x-large;
     padding-top: 5em;
-    padding-bottom: 10em;
+    padding-bottom: 8em;
     padding-left: 3em;
     margin-left: 3em;
     margin-right: -200%;
@@ -287,7 +287,7 @@ header h1 {
     margin-right: 3em;
 }
 
-#promotion button {
+.promotionButton {
     border-radius: 999px;
     background-color: white;
     color: black;
@@ -296,10 +296,10 @@ header h1 {
     font-size: x-large;
     z-index: 3000;
     margin: 0.2em;
-    width: -webkit-fill-available;
+    width: fit-content;
 }
 
-#promotion button a {
+.promotionButton a {
     color: black;
     font-size: x-large;
     font-weight: bolder;
@@ -367,10 +367,10 @@ header h1 {
         top: unset;
         left: unset;
         transform: unset;
-        width: -webkit-fill-available;
+        width: 95%;
         padding: 1em;
-        font-size: small;
-        margin-right: 10%;
+        font-size: large;
+        margin:0 auto;
         padding-bottom: 3em;
         margin-left: 0;
     }
@@ -390,6 +390,10 @@ header h1 {
         margin-top: -2em;
         margin-left: 10%;
         margin-right: 0;
+    }
+
+    .promotionButton a {
+        font-size:large;
     }
 
     #promotion h2 {
